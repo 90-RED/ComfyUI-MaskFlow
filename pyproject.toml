@@ -1,0 +1,22 @@
+[project]
+name = "maskflow"
+version = "1.0.4"
+description = "Draw a mask at any point in a ComfyUI workflow (after resize / rotate / crop), keep every mask as a numbered file, and shape the mask edge."
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9"
+# The panel uses frontend internals (DOM-widget height API, hidden widgets), so
+# state the frontend build those were verified against.
+dependencies = ["comfyui-frontend-package>=1.51.0"]
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/90-RED/ComfyUI-MaskFlow"
+"Bug Tracker" = "https://github.com/90-RED/ComfyUI-MaskFlow/issues"
+
+[tool.comfy]
+PublisherId = "red90"
+DisplayName = "MaskFlow"
+Icon = "https://raw.githubusercontent.com/90-RED/ComfyUI-MaskFlow/main/icon.png"
